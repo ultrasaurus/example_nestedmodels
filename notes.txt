@@ -1,0 +1,34 @@
+ 515  rails -d mysql nestedmodels
+  516  cd nestedmodels/
+  517  vim config/database.yml 
+  518  rake db:create:all
+  519  ./script/generate scaffold Project name:string
+  520  ./script/generate scaffold Task name:string
+  521  ./script/generate scaffold Task name:string due_on:date
+  522  rm db/migrate/20090419205521_create_tasks.rb
+  523  ./script/generate scaffold Task name:string due_on:date
+  524  ls
+  525  vi config/routes.rb 
+  526  ls
+  527  vim app/models/project.rb 
+  528  rake db:migrate
+  529  pwd
+  530  rake test
+  531  script/generate
+  532  script/generate model -h
+  533  ls
+  534  cd db/migrate/
+  535  ls
+  536  script/generate migration -h
+  537  pwd
+  538  cd ../..
+  539  script/generate migration -h
+  540  script/generate model -h
+  541  script/generate migration AddProjectToTask project_id:integer
+  542  rake db:mgrate
+  543  rake db:migrate
+  544  script/generate migration AddProjectToTask project_id:integer
+  545  cd app/views/projects/
+  546  ls
+  547  mv _edit.html.erb _project.html.erb
+

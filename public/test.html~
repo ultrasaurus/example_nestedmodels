@@ -1,0 +1,15 @@
+<html>
+
+<form action="http:/projects.xml" method="post">
+<textarea rows="20" cols="80">
+<project>
+    <name>TestXML</name>
+    <task>
+        <name>TaskFromXML</name>
+    </task>
+</project>
+</textarea>
+<input type="submit" value="POST"/>
+</form>
+
+</html>
